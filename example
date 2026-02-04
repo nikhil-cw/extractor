@@ -1,0 +1,279 @@
+{
+    "success": true,
+    "data": {
+        "url": "https://www.alpineramble.com/trip/annapurna-base-camp-trek",
+        "platform": "alpineramble",
+        "schemaUsed": "tour",
+        "extracted": {
+            "tourName": "Annapurna Base Camp Trek",
+            "slug": "annapurna-base-camp-trek",
+            "tourType": "Multi-Day",
+            "description": "The Annapurna Base Camp Trek is an extraordinary adventure into the glacial heart of the western Himalayas. We'll come face-to-face with the 10th highest mountain in the world, Mt. Annapurna (8091 m). This trek is also known as the Annapurna Sanctuary Trek. The trail follows winding trails along forested slopes and treks alongside rushing rivers of surpassing beauty as we approach Annapurna Base Camp on this uniquely accessible six-day itinerary. It's an incredible combination of diverse cultures and nature. This trip is more than just a trek that we will never forget. The best hiking time or season to visit Annapurna Base Camp is in the spring, which involves March, April, and May, a blooming and dry season, and autumn or fall, including months like September, October, and November. Annapurna Base Camp Trekking ABC is one of the most popular hikes in the world. It's truly a trip of a lifetime experience.",
+            "destinations": [
+                "Kathmandu",
+                "Pokhara",
+                "Annapurna Base Camp",
+                "Chhomrong",
+                "Dovan",
+                "Deurali",
+                "Bamboo",
+                "Sinuwa",
+                "Jhinu Danda"
+            ],
+            "activities": [
+                "Trekking",
+                "Hiking",
+                "Cultural Exploration",
+                "Mountain Viewing",
+                "Relaxation at Hot Springs"
+            ],
+            "highlights": [
+                "Enjoy a scenic drive through Nepal's rural countryside between the capital city of Kathmandu and the adventure hub of Pokhara.",
+                "Take in the sights and sounds of beautiful Pokhara, where the towering Himalayas can be seen reflected in the crystalline waters of Lake Phewa.",
+                "Relish a sublime view of the sun setting over a panorama of spectacular mountains, including Annapurna, Machapuchare, Gangapurna, and more.",
+                "Reward yourself with a relaxing soak at the natural hot springs at Jhinu Danda.",
+                "Explore the fascinating cultural traditions of the hospitable Gurung and Magar people."
+            ],
+            "heroImage": {
+                "url": "https://www.alpineramble.com/uploads/fullbanner/annapurna-base-camp-with-snow.webp",
+                "alt": "Annapurna Base Camp Trek"
+            },
+            "images": [
+                {
+                    "url": "https://www.alpineramble.com/uploads/package/gallery/thumb/bambo-in-abc.webp",
+                    "alt": "Bambo In Abc"
+                },
+                {
+                    "url": "https://www.alpineramble.com/uploads/package/gallery/thumb/annapurna-base-camp-nepal-1.webp",
+                    "alt": "Annapurna Base Camp Nepal 1"
+                },
+                {
+                    "url": "https://www.alpineramble.com/uploads/package/gallery/thumb/group-at-machhapuchare-base.webp",
+                    "alt": "Group At Machhapuchare Base"
+                },
+                {
+                    "url": "https://www.alpineramble.com/uploads/package/gallery/morning-view-at-abc.webp",
+                    "alt": "Morning View At Abc"
+                },
+                {
+                    "url": "https://www.alpineramble.com/uploads/package/gallery/annapurna-base-camp-hike-in.webp",
+                    "alt": "Annapurna Base Camp Hike In"
+                },
+                {
+                    "url": "https://www.alpineramble.com/uploads/package/gallery/celebration-at-annapurna-ba.webp",
+                    "alt": "Celebration At Annapurna Ba"
+                },
+                {
+                    "url": "https://www.alpineramble.com/uploads/media/ABC%20trek%20package%206%20days/view-from-chhomrong-village.webp",
+                    "alt": "view-from-chhomrong-village"
+                },
+                {
+                    "url": "https://www.alpineramble.com/uploads/media/ABC%20trek%20package%206%20days/stupa-in-chhomrong.jpg",
+                    "alt": "stupa-in-chhomrong"
+                },
+                {
+                    "url": "https://www.alpineramble.com/uploads/media/ABC%20trek%20package%206%20days/trekking-in-sinuwa-vally-in-abc.jpg",
+                    "alt": "trekking-in-sinuwa-vally-in-abc"
+                },
+                {
+                    "url": "https://www.alpineramble.com/uploads/media/ABC%20trek%20package%206%20days/chhomrong-village.jpg",
+                    "alt": "chhomrong-village"
+                },
+                {
+                    "url": "https://www.alpineramble.com/uploads/media/ABC%20trek%20package%206%20days/way-to-deurali.jpg",
+                    "alt": "way-to-deurali"
+                }
+            ],
+            "itineraries": [
+                {
+                    "day": "Day 01",
+                    "title": "Drive from Pokhara to Jhinu Dada and Trek to Chhomrong / Sinuwa",
+                    "description": "The first day of our Short Annapurna Base Camp Trek begins in the scenic lakeside city of Pokhara. After enjoying a hearty breakfast, we’ll meet our driver and travel to a small village called Birethanti to collect our trekking permits. Then, we’ll drive a bit further to reach the trailhead at Siwai, which will take a total of about two hours on the road this morning. It’s all on foot from here, and our trek gets underway in earnest as we cross picturesque suspension bridges, hike past sparkling waterfalls, and cross alpine meadows where yaks graze, and Gurung villagers tend to crops of buckwheat and millet. As we approach our destination of Chhomrong or go a little further to Sinuwa, we’ll even start to enjoy some breathtaking views of snowcapped mountains. Chhomrong itself is a sprawling hillside village where you’ll meet plenty of friendly Gurung villagers as we settle into our accommodations. We’ll be staying at one of the local trekking lodges or teahouses. This is how overnight trekking is usually done in Nepal, and you’ll reap the rewards of a home-cooked meal and a warm place to sleep. Once we get checked in, you can relax in the village with a hot mug of tea as dusk gathers over the summits of Annapurna South, Hiunchuli, and the fishtail-shaped Machapuchare.",
+                    "accommodation": "Trekking Lodge (Tea House)",
+                    "meals": "Breakfast, Lunch, Dinner"
+                },
+                {
+                    "day": "Day 02",
+                    "title": "Trek from Chhomrong to Dovan",
+                    "description": "Welcome the morning sunrise with a delicious breakfast and a cup of fresh tea as the light breaks over the mountains. After enjoying the marvelous view, we’ll begin our second day of trekking. Today’s trail starts with a stone staircase leading down for about an hour to the churning waters of the Chhomrong Khola River. We’ll cross a dramatic suspension bridge to reach the opposite bank before climbing the second series of stone stairs for another two hours. This will bring us to the little community of Sinuwa, where we’ll take a short break to soak in the tremendous view from 2,350 meters above sea level. The second portion of today’s hike brings us through a quiet forest of bamboo, oak, and rhododendron for approximately two hours. The flatter terrain in the dense woodland here will serve as a brief respite before we begin the steep ascent to the little villages known as Bamboo and Dovan. There, we’ll enjoy a well-earned hot meal and a good night’s sleep at one of the best guesthouses in town.",
+                    "accommodation": "Trekking Lodge (Tea House)",
+                    "meals": "Breakfast, Lunch, Dinner"
+                },
+                {
+                    "day": "Day 03",
+                    "title": "Trek from Dovan to Duerali",
+                    "description": "After having breakfast at our Lodge in Dovan, we will begin our scenic hike from Deurali. Today's hike covers a distance of about 600 meters from Dovan to Deurali village. The first leg of the trek to the Himalayas involves a gentle climb through the lush forest of pines, oaks, and rhododendrons. We will encounter several stunning waterfalls along the way and eventually make our way to the Himalayan point, where we will encounter uphill sections leading to Dovan. The second leg of the trek would be 300 meters, which could take 1-2 hours to reach the camp. Along the way, we will also pass by the Hinco-Cave. Upon reaching Deurali, we can take a nice break, enjoy some snacks, and have a cup of hot tea while enjoying this beautiful scenery. Depending on your decisions, we may carry on to MBC. If you're interested in continuing to walk a little further, you can decide to climb to Machhapuchare base camp, which takes approximately 2 hours from Deurali, staying at MBC is so nice to see the great views of the Himalayan mountains. The view from MBC is truly spectacular. This will be a beautiful hike, with stunning views of Gangapurna, Annapurnas, Singachuli, and Macchupuchre throughout the entire walk.",
+                    "accommodation": "Trekking Lodge (Tea House)",
+                    "meals": "Breakfast, Lunch, Dinner"
+                },
+                {
+                    "day": "Day 04",
+                    "title": "Trek to Annapurna Base Camp (ABC) via Machapuchare Base Camp (MBC)",
+                    "description": "Today, we’ll earn the unique distinction of visiting not one but two mountaineering base camps. We’ll hit the trail right after breakfast, and we can expect to trek for about four hours in total. This is perhaps the most exciting day of our Himalayan adventure, and we’ll begin by climbing for two hours to the astounding natural amphitheater of mountains known as the Annapurna Sanctuary. This is where we’ll find Machapuchare Base Camp at an elevation of 3,700 meters. From here, you’ll get splendid views of Machapuchare, Gangapurna, and the entire Annapurna massif. After a short break for tea, we’ll continue across the dry moraine for two more hours and make the final push towards Annapurna Base Camp itself. The camp is situated at 4,130 meters in elevation, which represents the highest point on the entire Short Annapurna Base Camp Trek. The views here are nothing short of sublime: prayer flags are snapping in the wind, climbers and hikers are celebrating their achievements, and you’re completely surrounded by mountains. The panoramic vista from the base camp encompasses Machapuchare, Annapurna South, Annapurna III, Gandharva Chuli, and Gangapurna. But the star of the show is Annapurna I, stretching to an unbelievable 8,091 meters in height. We’ll spend the rest of the day at base camp enjoying the views and overnight at a nearby trekking lodge.",
+                    "accommodation": "Trekking Lodge (Tea House)",
+                    "meals": "Breakfast, Lunch, Dinner"
+                },
+                {
+                    "day": "Day 05",
+                    "title": "Trek from ABC to Bamboo / Sinuwa",
+                    "description": "If you thought the views last night were spectacular, wait until you stand witness to the near-vertical south face of Annapurna washed in the golden glow of sunrise. We’ll linger over our breakfast to make the most of this phenomenon, taking plenty of time to bask in the unrivaled splendor of Annapurna Base Camp’s 360-degree Himalayan views. When you’re ready to move on, we’ll pack up our things and retrace our steps back to the village of Bamboo or the option to stand a little further to Sinuwa. As we pass idyllic homesteads and hike through alpine valleys and verdant woodlands, you’ll begin to appreciate how the trail presents an entirely different aspect when traveled in reverse. The terrain will also be somewhat easier to navigate now that we’ve begun our long descent from the high altitudes of base camp. After reaching Sinuwa, we’ll get checked in at another comfortable trekking lodge and have the afternoon and evening at our leisure.",
+                    "accommodation": "Trekking Lodge (Tea House)",
+                    "meals": "Breakfast, Lunch, Dinner"
+                },
+                {
+                    "day": "Day 06",
+                    "title": "Trek to Jhinu Dada (3 hrs) and Drive to Pokhara (3 hrs) / Kathmandu",
+                    "description": "Our overland adventure continues in reverse this morning as we follow winding trails along with terraced fields and tread secluded paths through sun-dappled stands of oak and rhododendron. After passing through the familiar village of Chhomrong, we’ll take a steep detour to the popular Jhinu Danda hot springs. These natural spring-fed pools are a fantastic place to relax and let the stress of hiking melt away from your body. The pools are situated in the scenic river canyon of the Modi Khola, and we’ll stop here for some well-deserved rest and relaxation. After drying off, we’ll shoulder our packs once more and begin the final two-hour hike back to Siwai, where we first joined the trailhead at the start of our Short Annapurna Base Camp Trek. When we arrive in town, we’ll link up with a local taxi or bus to drive back to Pokhara. This last stretch of road takes between two and three hours to cover. Back in Pokhara, we’ll get checked in at our hotel, and we have plenty of time left to take a stroll in town, visit Lake Phewa, and dig into a sumptuous meal as the reward for all of our hard trekking. BTW, if you intend to travel back on the same day or the next day from Pokhara, then we will be happy to arrange free transport by tourist bus from Pokhara - Kathmandu. However you choose to travel, we’ve got one more evening of celebration and revelry in store for you. Our last night in the vibrant capital of Nepal serves as a great opportunity to experience some of the best traditional and cultural points of interest, which can be found here in Pokhara / Kathmandu. Some of the must-see religious attractions and other activities such as paragliding, bunjy jumping, and city tours in the cities are Pokhara and Kathmandu, including the most popular places like Boudhanath and Swayambhunath stupas, as well as Kathmandu Durbar Square. When you’ve had your fill of sightseeing, we’ll gather together for a farewell dinner at one of the best restaurants in town. Whether you’re departing Nepal tonight or spending another night in your hotel, remember that Alpine Ramble Treks provides complimentary transfers to Tribhuvan International Airport when it’s time to leave. Hosting your Short Annapurna Base Camp Trek has been our pleasure, and we hope you’ve had an unforgettable time in the western Himalayas. We can’t wait to welcome you back to Nepal!",
+                    "accommodation": "Hotel in Pokhara",
+                    "meals": "Breakfast, Lunch"
+                }
+            ],
+            "inclusions": [
+                "Standard food as per the local teahouse menu (Breakfast, lunch, and Dinner) will be provided during the trek",
+                "Water purification tablets or drops to purify your water for safe drinking on a hike",
+                "Seasonal fruits every evening on a hike",
+                "Private transport from the airport (pick-up and drop-off service) to the hotel and back to the airport",
+                "Tourist bus from Kathmandu to Pokhara and back to Kathmandu",
+                "Private transport on a jeep from Pokhara to Jinu dada and back to Pokhara",
+                "Friendly, experienced, first-aid-trained, government-licensed, English-speaking local ART'S leader/guide",
+                "An assistance guide if the group is bigger than 6 people",
+                "One friendly helper/porter (1 porter for two trekkers; one porter can carry up to 20 kg weight, so 10kg each for the hike)",
+                "Guides' and porters' wages, meals, accommodation, insurance, and necessary equipment",
+                "Annapurna Conservation Area permit (ACAP)",
+                "Trekkers’ Information Management System (TIMS) card",
+                "Local and government taxes, as well as official fees",
+                "Two nights in a hotel in Pokhara at Splendid View / Similar (one night before and another night after the trek) with breakfast",
+                "Five nights' accommodation at the teahouses/lodges, generally twin sharing at some places and Dom type room at Dovan, Deurali and ABC for 3 nights",
+                "Easy and free access to store the luggage (if any inessential trekking gear) at our ART's office or hotel, both in Kathmandu and Pokhara",
+                "A first aid kit, including an Oximeter to measure pulse and oxygen levels daily in the mountains",
+                "Help in arranging a rescue operation in the complicated health situation (funded by your travel insurance)",
+                "Rental-free (free use) of ART's duffel/kit bag, sleeping bag, and down jacket",
+                "ART's breathable Hiking t-shirt (sport-based), warm beanie and sun hat (all takeaways—souvenirs)",
+                "Certificate of Appreciation at the end after the trek",
+                "A farewell dinner with cultural shows in Kathmandu"
+            ],
+            "exclusions": [
+                "Nepal Entry Visa (can be obtained easily after your arrival at the airport in Kathmandu with a fee of usd 30 for 15-day visa, usd 50 for 30-day visa, & usd 125 for 90-day visa)",
+                "Extra accommodation and meals behind schedule the schedules of this trekking trip program",
+                "All kinds of beverages, including alcoholic and nonalcoholic as well as hot (Tea/coffee) and cold drinks",
+                "Personal expenses such as shopping, hot and cold drinks, hot showers, hard and soft alcohols, snacks, hot and cold water, Wi-Fi, battery re-charge fee, & helper",
+                "Travel insurance has to cover emergency rescue evacuation from high-altitude up to 6000 m",
+                "Personal hiking/trekking gear and equipment",
+                "Tip for trekking staff and driver"
+            ],
+            "faqs": [
+                {
+                    "question": "Can I get arrival visa in Nepal?",
+                    "answer": "Yes, a visa is required to enter Nepal except for SAARC and Chinese nationals. One can get a visa at the Royal Nepalese Embassy or consulate or at the airport upon arrival. Two copies of passport-sized photographs are required to get a visa."
+                },
+                {
+                    "question": "Do We Need Trekking Permits?",
+                    "answer": "Yes, The trekkers should have to have registered trekking permits, and TIMS (Trekker's Management Systems), they are all helped and provided by Alpine Ramble Treks- it's all included on our package program."
+                },
+                {
+                    "question": "Should I carry food with me during the trek?",
+                    "answer": "Not at all, you’ll be provided 3 meals a day: Breakfast, Lunch, and Dinner during the trek in the mountains and it’s a good idea to carry some power bars, cereal bars or other high energy foods with you. Powder Gatorade is also recommended to fight dehydration."
+                },
+                {
+                    "question": "Can I Store my luggage at Hotel?",
+                    "answer": "Yes, We have a safe and sound place to store where you can easily store your luggage at our hotel or office."
+                },
+                {
+                    "question": "What is the elevation of Annapurna Base Camp?",
+                    "answer": "The Highest elevation of the Annapurna base camp trek is 4130 meters above sea level."
+                },
+                {
+                    "question": "What kind of accommodation can we get on Annapurna Base Camp Trek?",
+                    "answer": "The accommodation on the Annapurna base camp trek is pretty convenient and it’s much the same as it is in the Everest base camp trek or Langtang valley trek. We always provide the best tea houses or trekking lodges for sleeping overnight during the trek in the mountains, the rooms are booked in the best lodge with two beds in each room with western toilet facilities and solar hot showers, wherever available. However, the higher we climb lower the facility we get due to the lack of facilities at such higher areas. As we ascend higher above Bambo and towards the base camp, the accommodation from these places will be basic with shared toilets and bucket shower, the room is normally dometry type with 2-4 beds in a room."
+                },
+                {
+                    "question": "Can I choose my own departure date?",
+                    "answer": "Yes, you could choose to own your departure date according to your time and schedule. If the published Group Departure dates are not suitable for your travel plan, we will help you to customize the trip Itinerary."
+                },
+                {
+                    "question": "Which months are the best for Travel and Trekking in Nepal?",
+                    "answer": "The best months for trekking in Nepal are in the months of September, October & November in the Autumn season and March, April & May in the Spring season."
+                },
+                {
+                    "question": "How safe is for solo female traveler?",
+                    "answer": "The Answer is absolutely safe even for the solo female traveler, who loves to explore Nepal through the reliable team with us; our Alpine Ramble team has been leading many successful solo female trips in Nepal Himalayas."
+                },
+                {
+                    "question": "Will somebody meet me at the Airport?",
+                    "answer": "Yes, upon arrival at Tribhuvan International airport, you’ll be received and welcomed by our official representative then transfer to the hotel at Thamel, which is the most interesting tourist hub with many facilities in Nepal. Overnight at the hotel."
+                },
+                {
+                    "question": "Do I need to have travel insurance for my trip?",
+                    "answer": "Yes, we highly recommend that you buy travel insurance before you travel to Nepal; it’s easier and better to purchase travel insurance in your own country."
+                },
+                {
+                    "question": "Can I get internet facility during the trek?",
+                    "answer": "Yes, almost every teahouse has Wi-Fi Facility at a little extra Cost during the trek in the Mountains."
+                },
+                {
+                    "question": "Can I take hot shower during the trek?",
+                    "answer": "Yes, a hot shower is available and it will be prepared by the gas, it is called a gas shower or bucket shower. Normally, we wouldn't prefer to take showers above the 4000 meters height because of the cold situation."
+                },
+                {
+                    "question": "Can I change the money in Nepal?",
+                    "answer": "Yes. Any of your currency can be exchanged in Nepal at better rates."
+                },
+                {
+                    "question": "Is there any laundry services on a trek?",
+                    "answer": "Yes, the Laundry services are available in every place or camp except for Annapurna base camp and Himalayas!"
+                },
+                {
+                    "question": "Is there any place that I can use credit card while trekking?",
+                    "answer": "You could use the credit card only in cities, areas of Nepal, in the mountains; the credit card is not acceptable in most places."
+                },
+                {
+                    "question": "What is AMS?",
+                    "answer": "Acute mountain sickness is an illness that can affect any mountain climbers, hikers, trekkers, or travelers at high altitudes, normally; it can be suffered above high of 9,000 feet. Acute mountain sickness is caused by reduced air pressure and lowers oxygen levels at high altitudes. If you feel dizzy, suffer palpitations or severe headaches, and return immediately to a lower altitude. Do not take altitude sickness lightly. It can be fatal! Please familiarize yourself with the symptoms of altitude sickness before your trek. Do not ignore even the mildest of altitude symptoms, inform your guide, porters, or hotel staff immediately. Generally, Our guides carry basic medicine and first aid equipment including simple painkillers, altitude sickness tablets, bandages, balm for muscle ache, and medication to treat diarrhea and vomiting."
+                },
+                {
+                    "question": "What if I get sick while on trek?",
+                    "answer": "It depends on the nature of the sickness. Generally, if you become sick, you will descend to a lower high altitude with the help and support of the staff. If you are seriously ill, injured etc we will arrange an emergency helicopter evacuation service. Our guide will take immediate action according to the situation in the mountains. Please ensure you arrange travel insurance that covers you for an evacuation service and trekking at high altitudes."
+                },
+                {
+                    "question": "What do I have to carry on trek?",
+                    "answer": "You will need to carry a good-size of a daypack where you could put your personal belongings, water, camera, snacks, sunscreen, a hat, a fleece jacket, and gloves for higher altitudes. The porters will carry the bigger packs with your clothes etc. They will carry packs up to 15kg."
+                },
+                {
+                    "question": "What kind of accommodation do we expect?",
+                    "answer": "In city areas of Nepal like Kathmandu and Pokhara, your hotel accommodation will generally include an attached bathroom and have facilities such as air conditioning, reception, Restaurant, and dining services. The level of accommodation is generally Nepalese 3 star and is comfortable and clean. If you require an upgrade of accommodation in Kathmandu or Pokhara, there are many 4 stars and 5-star options at an extra cost. Please let us know if you like high categories hotel service like 5 stars then we will be glad to book for you. Accommodation in the mountain, you will be staying in “Teahouses.” Accommodation is limited, particularly the higher you get, so your room may differ from a private single/double room to a bed in a dormitory. The accommodation is very basic and there will frequently be shared shower and toilet facilities with other trekkers sometime. Every teahouse has a common dining hall offering varieties of local and western kinds of meals including hot drinks like coffee and any kind of tea in the mountains."
+                },
+                {
+                    "question": "What Type of Food we expect in the Mountain",
+                    "answer": "Eventually, almost every trekking region has tea House facilities in Nepal; during the treks in the mountains, we provide standard breakfast, lunch, and dinner. Your guide/ porter will help you with the menu selection and ensure that you get the best value meals possible. Although the food is usually plentiful and delicious, you should be aware that the menu is not normally extensive. Most teahouses offer a variety of rice and noodle dishes, as well as soup and seasonal vegetables. A variety of cereals, bread, and egg dishes are generally available for breakfast. There will also be plenty of snacks available such as biscuits, chocolate, and soft drinks and in some areas, you will find fresh fruit in season. You can buy packaged water (bottled mineral water) from a local lodge and shop en route or you can also ask your guide to fill your water bottle with boiled water and treat it with water purification pills."
+                }
+            ],
+            "logisticsAndDetails": {
+                "duration": "6 Days",
+                "durationNights": "5 Nights",
+                "pricePerPerson": "US$699US$899",
+                "currency": "USD",
+                "bestTimeToVisit": "Spring (March, April, May) and Autumn (September, October, November)",
+                "weatherInfo": "Spring (March to May): Daytime: 10°C to 15°C (warmer at lower altitudes), Nighttime: -8°C to 0°C (can drop below freezing). Summer/Monsoon (June to August): Daytime: 18°C to 25°C (at lower elevations), Nighttime: 3°C to 7°C. Autumn (September to November): Daytime: 10°C to 15°C (warmer at lower altitudes), Nighttime: -10°C to 0°C (becoming colder as winter approaches). Winter (December to February): Daytime: 5°C to 10°C (at lower elevations), can be far below zero at ABC. Nighttime: -10°C to -20°C (very cold, especially at higher altitudes).",
+                "altitudeRange": "4,130 m/13,550 ft",
+                "visaRequirements": "Travelers need a visa to Nepal except for Chinese and Indian tourists; getting a Visa for NEPAL is also very easy; you can get AN ARRIVAL VISA at Tribhuvan International Airport in Kathmandu on arrival. Nonetheless, you need to enter Nepal within six months of the visa-issuing date. Your total stay is counted starting from the day you enter Nepal. Visa Fees: forgetting the visa process for tourists, there is a certain charge you need to face for Nepal; it's around 40 USD as visa application fees for a 30-day tourist visa to foreigners except for Chinese and Indian people. For tourists who have Indian and Chinese passports, you will get a free visa to enter Nepal.",
+                "packingList": "Suitable Hiking Thermal, Fleece jacket, Windcheater, Down jacket, Comfortable Hiking Fleece, wool trousers, Trekking or hiking pants, Mittens, woolen gloves, Warm Hiking socks, Trekking shoes with spare laces, Pair of flip-flops, Underwear & Swimming costume, Hiking cotton trousers and t-shirts, Sun hat, scarf, Sunglasses, Sleeping bag, Day backpack with 35-45L, Small lock, Reusable water bottles, Water purification tablets, electric light, Wash towel, Toiletries (wet tissue, quick-drying towel, toilet paper, moisturizers, lip balms, sunscreens, sanitary pads, hand sanitizer, nail clipper, small mirror, toothpaste & brush), Rain poncho, Basic personal first aid kit",
+                "cancellationPolicy": "Last-minute trip booking is possible and it can be made by any of you through Free Online Booking or by sending an email, message, Whatsapp, or calling. The last-minute booking should be at least a day before the trip gets started, and for any last-minute booking, the traveler should make the full payment in order to confirm the trip for the last-minute booking. However, last-minute booking for Bhutan and Tibet tours is not acceptable.",
+                "difficulty": "Easy-Moderate",
+                "groupSize": "1-20 pax",
+                "ageRange": "Not specified",
+                "travelStyle": "Trekking, Hiking",
+                "physicalRequirements": "Good health and reasonable physical fitness. No previous trekking experience is required. However, this trek does reach altitudes higher than 4,000 meters, and it's important to drink lots of water and get plenty of good food to let your body adjust naturally to the increased elevation.",
+                "meetingPoint": "Kathmandu or Pokhara",
+                "guideLanguages": "English",
+                "guideExperience": "15+ years",
+                "guideCertification": "Government-licensed, first-aid-trained"
+            },
+            "meta": {
+                "label": "Annapurna Base Camp Trek",
+                "excerpt": "The Annapurna Base Camp Trek is an extraordinary adventure into the glacial heart of the western Himalayas. We'll come face-to-face with the 10th highest mountain in the world, Mt. Annapurna (8091 m). This trek is also known as the Annapurna Sanctuary Trek. The trail follows winding trails along forested slopes and treks alongside rushing rivers of surpassing beauty as we approach Annapurna Base Camp on this uniquely accessible six-day itinerary."
+            }
+        }
+    },
+    "timestamp": "2026-02-04T04:10:19.872Z",
+    "requestId": "16dbcc59-0ef0-4e99-a813-b7eb3b24ae8f"
+}
