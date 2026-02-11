@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Search from './components/Search';
 import Content from './components/Content';
 
-const API_URL = "/api/builder/content-extraction/extract";
+const API_URL = "/api/tour/content-extraction/extract";
 
 const App = () => {
   const [url, setUrl] = useState("https://www.alpineramble.com/trip/annapurna-base-camp-trek");

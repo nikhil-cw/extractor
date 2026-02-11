@@ -230,6 +230,52 @@ button:disabled {
   line-height: 1.5;
 }
 
+/* DetailCard specific styles */
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  color: #374151;
+}
+
+dd {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+dl dl,
+dl ul,
+dl ol {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-bottom: 0;
+}
+
+ul li, ol li {
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
 /* Loading & Error */
 .loading {
   text-align: center;
