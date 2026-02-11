@@ -1,0 +1,142 @@
+{
+    type: 'object' as const,
+    properties: {
+      // Basic Info
+      tourName: { type: 'string', description: 'Tour title' },
+      slug: { type: 'string', description: 'URL-friendly slug' },
+      tourType: { type: 'string', description: 'Type: Multi-Day, Activity/Single-Day, Custom' },
+      overview: { type: 'string', description: 'Full tour overview with all HTML tags preserved' },
+
+      // All remaining sections not covered by other fields
+      other: { type: 'string', description: 'All remaining miscellaneous sections (Travel Notes, Cancellation Policy, etc.) with HTML preserved, including section headings' },
+
+      // Destinations & Activities
+      destinations: { type: 'array', items: { type: 'string' }, description: 'Places visited' },
+      activities: { type: 'array', items: { type: 'string' }, description: 'Activity types' },
+
+      // Images
+      heroImage: {
+        type: 'object',
+        properties: {
+          url: { type: 'string', description: 'Hero image URL' },
+          alt: { type: 'string', description: 'Hero image alt text' },
+        },
+        required: ['url', 'alt'],
+        description: 'Main hero image',
+      },
+      images: {
+        type: 'array',
+        items: {
+          type: 'object',
+          properties: {
+            url: { type: 'string', description: 'Image URL' },
+            alt: { type: 'string', description: 'Image alt text' },
+          },
+          required: ['url', 'alt'],
+        },
+        description: 'All images found in the page body',
+      },
+
+      // Itinerary (wrapped with section title)
+      itineraries: {
+        type: 'object',
+        properties: {
+          title: { type: 'string', description: 'Section heading (e.g., "Detailed Itinerary")' },
+          items: {
+            type: 'array',
+            items: {
+              type: 'object',
+              properties: {
+                day: { type: 'string', description: 'e.g., "Day 01"' },
+                title: { type: 'string' },
+                description: { type: 'string', description: 'Full HTML content preserved' },
+                accommodation: { type: 'string' },
+                meals: { type: 'string', description: 'Comma-separated' },
+              },
+              required: ['day', 'title', 'description'],
+            },
+          },
+        },
+        required: ['title', 'items'],
+      },
+
+      // Inclusions (wrapped with section title)
+      inclusions: {
+        type: 'object',
+        properties: {
+          title: { type: 'string', description: 'Section heading (e.g., "Cost Includes")' },
+          items: { type: 'array', items: { type: 'string' } },
+        },
+        required: ['title', 'items'],
+        description: 'What is included',
+      },
+
+      // Exclusions (wrapped with section title)
+      exclusions: {
+        type: 'object',
+        properties: {
+          title: { type: 'string', description: 'Section heading (e.g., "Cost Excludes")' },
+          items: { type: 'array', items: { type: 'string' } },
+        },
+        required: ['title', 'items'],
+        description: 'What is not included',
+      },
+
+      // FAQs (wrapped with section title)
+      faqs: {
+        type: 'object',
+        properties: {
+          title: { type: 'string', description: 'Section heading (e.g., "FAQs")' },
+          items: {
+            type: 'array',
+            items: {
+              type: 'object',
+              properties: {
+                question: { type: 'string' },
+                answer: { type: 'string', description: 'Full HTML content preserved' },
+              },
+              required: ['question', 'answer'],
+            },
+          },
+        },
+        required: ['title', 'items'],
+      },
+
+      // Tour Info (fixed fields)
+      info: {
+        type: 'object',
+        properties: {
+          duration: { type: 'string', description: 'e.g., "14 days"' },
+          ageRange: { type: 'string', description: 'e.g., "5-65 years", "18+", "All ages"' },
+          difficulty: { type: 'string', description: 'Easy, Moderate, Strenuous, Extreme' },
+        },
+      },
+
+      // Custom Info (dynamic label-value pairs)
+      customInfo: {
+        type: 'array',
+        maxItems: 10,
+        items: {
+          type: 'object',
+          properties: {
+            label: { type: 'string', description: 'Info label (e.g., "Maximum Altitude")' },
+            value: { type: 'string', description: 'Info value (e.g., "5,364m")' },
+          },
+          required: ['label', 'value'],
+        },
+        description: 'Additional tour details as label-value pairs (max 10)',
+      },
+
+      // Meta/SEO
+      meta: {
+        type: 'object',
+        properties: {
+          label: { type: 'string', description: 'SEO label' },
+          excerpt: { type: 'string', description: 'SEO excerpt' },
+        },
+        required: ['label', 'excerpt'],
+        description: 'SEO/Meta information',
+      },
+    },
+    required: ['tourName', 'slug', 'overview', 'destinations', 'activities', 'images', 'itineraries', 'inclusions', 'exclusions'],
+}

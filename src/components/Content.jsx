@@ -21,6 +21,7 @@ const Content = ({ data }) => {
     "faqs",
     "slug", // Can be used for URL, not explicitly displayed as a card
     "other", // From the example, it's just a cookie message, not for display
+    "tokenUsage", // Explicitly rendered at the end
   ]);
 
   return (
@@ -148,6 +149,11 @@ const Content = ({ data }) => {
             </div>
           ))}
         </Card>
+      )}
+
+      {/* Token Usage */}
+      {data.tokenUsage && (
+        <DetailCard title="Token Usage" content={data.tokenUsage} />
       )}
 
       {/* Render unknown/other fields dynamically */}

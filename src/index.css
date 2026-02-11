@@ -289,3 +289,71 @@ ul li, ol li {
   padding: 12px;
   border-radius: 6px;
 }
+
+/* App Layout */
+.app-layout {
+  display: flex;
+  min-height: calc(100vh - 68px); /* Adjust based on header height */
+}
+
+.history-sidebar {
+  width: 280px;
+  background: #f0f2f5;
+  padding: 16px;
+  border-right: 1px solid #e0e2e5;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.history-sidebar .card {
+  margin-bottom: 0;
+}
+
+.history-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history-sidebar li {
+  padding: 10px 12px;
+  margin-bottom: 5px;
+  background: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.history-sidebar li:hover {
+  background-color: #f0f8ff;
+}
+
+.history-sidebar li.selected {
+  background-color: #e0f2fe;
+  border: 1px solid #90cdf4;
+  font-weight: 500;
+}
+
+.history-sidebar li a {
+  color: #2563eb;
+  text-decoration: none;
+  display: block;
+}
+
+.history-sidebar li a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 24px; /* Matches container's top/bottom margin */
+}
+
+.main-content .container {
+  max-width: 800px; /* Adjust content width for main area */
+  margin: 0 auto;
+  padding: 0; /* Remove padding as main-content has it */
+}
