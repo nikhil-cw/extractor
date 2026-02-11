@@ -3,9 +3,10 @@ import Header from './components/Header';
 import Search from './components/Search';
 import Content from './components/Content';
 import HistorySidebar from './components/HistorySidebar';
+import TokenUsageDisplay from './components/TokenUsageDisplay'; // Import TokenUsageDisplay
 import { useHistory } from './HistoryContext';
 
-const API_URL = "/api/tour/content-extraction/extract";
+const API_URL = "/api/tour/content-extraction/extract"; // Corrected API_URL
 
 const App = () => {
   const [url, setUrl] = useState("https://www.alpineramble.com/trip/annapurna-base-camp-trek");
@@ -38,7 +39,7 @@ const App = () => {
       const json = await res.json();
       if (!json.success) throw new Error("Extraction failed");
 
-      // Add the full JSON response data to history, not just extracted
+      // Add the full JSON response data to history
       addHistoryItem(url, json.data);
     } catch (err) {
       setError(err.message);
@@ -58,15 +59,26 @@ const App = () => {
   return (
     <>
       <Header />
-      <div className="app-layout"> {/* New div for layout */}
+      <div className="container search-container"> {/* Container for search bar */}
+        <Search url={url} setUrl={setUrl} fetchData={fetchData} disabled={loading} />
+      </div>
+
+      <div className="app-layout">
         <HistorySidebar history={history} onSelect={handleSelectHistoryItem} selectedHistoryId={selectedHistoryId} />
-        <div className="main-content">
+        
+        <div className="main-content-area"> {/* New container for main content and token sidebar */}
           <div className="container">
-            <Search url={url} setUrl={setUrl} fetchData={fetchData} disabled={loading} />
             {loading && <div className="loading">Extracting content…</div>}
             {error && <div className="error">{error}</div>}
-            {/* Pass selectedData to Content */}
-            <Content data={selectedData} />
+            
+            <div className="content-display-area"> {/* Flex container for content and token usage */}
+              <Content data={selectedData?.extracted || {}} url={selectedData?.url || url} /> {/* Ensure data and url are always objects/strings */}
+              {selectedData?.tokenUsage && (
+                <div className="token-usage-sidebar">
+                  <TokenUsageDisplay data={selectedData.tokenUsage} /> {/* Use TokenUsageDisplay */}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

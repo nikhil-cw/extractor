@@ -25,6 +25,18 @@ export const HistoryProvider = ({ children }) => {
     }
   }, [history]);
 
+  // Set selected item on initial load or if history changes
+  useEffect(() => {
+    if (history.length > 0 && !selectedHistoryId) {
+      setSelectedHistoryId(history[0].id);
+    } else if (history.length === 0) {
+      setSelectedHistoryId(null);
+    } else if (selectedHistoryId && !history.some(item => item.id === selectedHistoryId)) {
+      // If selected item was deleted, select the latest one
+      setSelectedHistoryId(history[0].id);
+    }
+  }, [history, selectedHistoryId]);
+
   const addHistoryItem = (url, data) => {
     const newId = Date.now().toString(); // Unique ID for each history item
     const newItem = { id: newId, url, timestamp: new Date().toISOString(), data };
@@ -37,6 +49,14 @@ export const HistoryProvider = ({ children }) => {
     setSelectedHistoryId(newId); // Select the newly added item
   };
 
+  const deleteHistoryItem = (idToDelete) => {
+    setHistory(prevHistory => {
+      const updatedHistory = prevHistory.filter(item => item.id !== idToDelete);
+      return updatedHistory;
+    });
+    // The useEffect above will handle updating selectedHistoryId if the deleted item was selected
+  };
+
   const getHistoryItem = (id) => history.find(item => item.id === id);
 
   const selectHistoryItem = (id) => setSelectedHistoryId(id);
@@ -44,7 +64,7 @@ export const HistoryProvider = ({ children }) => {
   const selectedData = selectedHistoryId ? getHistoryItem(selectedHistoryId)?.data : null;
 
   return (
-    <HistoryContext.Provider value={{ history, addHistoryItem, selectedData, selectHistoryItem, selectedHistoryId }}>
+    <HistoryContext.Provider value={{ history, addHistoryItem, deleteHistoryItem, selectedData, selectHistoryItem, selectedHistoryId }}>
       {children}
     </HistoryContext.Provider>
   );

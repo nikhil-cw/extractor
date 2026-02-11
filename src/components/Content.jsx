@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 import DetailCard from './DetailCard';
 
-const Content = ({ data }) => {
+const Content = ({ data, url }) => { // Added url prop
   if (!data) return null;
 
   // Fields to be explicitly rendered
@@ -19,9 +19,10 @@ const Content = ({ data }) => {
     "inclusions",
     "exclusions",
     "faqs",
-    "slug", // Can be used for URL, not explicitly displayed as a card
-    "other", // From the example, it's just a cookie message, not for display
-    "tokenUsage", // Explicitly rendered at the end
+    "slug", // Rendered as part of meta/header info, not a separate card
+    "other", // Explicitly rendered
+    "customInfo", // Explicitly rendered
+    // "tokenUsage" is now rendered in App.jsx
   ]);
 
   return (
@@ -39,6 +40,7 @@ const Content = ({ data }) => {
           {data.tourName && <h2>{data.tourName}</h2>}
           {data.meta?.label && <h3>{data.meta.label}</h3>}
           {data.meta?.excerpt && <p className="description">{data.meta.excerpt}</p>}
+          {url && <p><strong>URL:</strong> <a href={url} target="_blank" rel="noopener noreferrer">{url}</a></p>}
         </Card>
       )}
 
@@ -68,14 +70,21 @@ const Content = ({ data }) => {
         </Card>
       )}
 
-      {/* Overview */}
-      {data.overview && (
-        <Card title="Overview">
-          <div dangerouslySetInnerHTML={{ __html: data.overview }} />
+      {/* Custom Info */}
+      {data.customInfo?.length > 0 && (
+        <Card title="Additional Info">
+          <div className="info-grid">
+            {data.customInfo.map((item, i) => (
+              <div className="info-item" key={i}>
+                <strong>{item.label}</strong>
+                <span>{item.value}</span>
+              </div>
+            ))}
+          </div>
         </Card>
       )}
 
-      {/* Destinations */}
+       {/* Destinations */}
       {data.destinations?.length > 0 && (
         <Card title="Destinations">
           {data.destinations.map((d, i) => (
@@ -90,6 +99,13 @@ const Content = ({ data }) => {
           {data.activities.map((a, i) => (
             <span className="badge" key={i}>{a}</span>
           ))}
+        </Card>
+      )}
+
+      {/* Overview */}
+      {data.overview && (
+        <Card title="Overview">
+          <div dangerouslySetInnerHTML={{ __html: data.overview }} />
         </Card>
       )}
 
@@ -139,9 +155,16 @@ const Content = ({ data }) => {
         </Card>
       )}
 
+      {/* Other (miscellaneous sections with HTML) */}
+      {data.other && (
+        <Card title="Other Information">
+          <div dangerouslySetInnerHTML={{ __html: data.other }} />
+        </Card>
+      )}
+
       {/* FAQs */}
       {data.faqs?.items?.length > 0 && (
-        <Card title={data.faqs.title || "FAQs"}>
+        <Card title={`${data.faqs.title || "FAQs"} (${data.faqs.items.length})`}>
           {data.faqs.items.map((f, i) => (
             <div className="faq" key={i}>
               <strong>{f.question}</strong>
@@ -149,11 +172,6 @@ const Content = ({ data }) => {
             </div>
           ))}
         </Card>
-      )}
-
-      {/* Token Usage */}
-      {data.tokenUsage && (
-        <DetailCard title="Token Usage" content={data.tokenUsage} />
       )}
 
       {/* Render unknown/other fields dynamically */}
