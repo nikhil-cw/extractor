@@ -1,10 +1,29 @@
 import React from 'react';
 import Card from './Card';
+import DetailCard from './DetailCard';
 
-const Content = ({ data }) => {
+const Content = ({ data, url }) => { // Added url prop
   if (!data) return null;
 
-  const logistics = data.logisticsAndDetails || {};
+  // Fields to be explicitly rendered
+  const renderedFields = new Set([
+    "heroImage",
+    "tourName",
+    "meta",
+    "info",
+    "overview",
+    "destinations",
+    "activities",
+    "images",
+    "itineraries",
+    "inclusions",
+    "exclusions",
+    "faqs",
+    "slug", // Rendered as part of meta/header info, not a separate card
+    "other", // Explicitly rendered
+    "customInfo", // Explicitly rendered
+    // "tokenUsage" is now rendered in App.jsx
+  ]);
 
   return (
     <>
@@ -15,84 +34,78 @@ const Content = ({ data }) => {
         </div>
       )}
 
-      {/* Title & Description */}
-      <Card>
-        {data.tourName && <h2>{data.tourName}</h2>}
+      {/* Tour Name & Meta */}
+      {(data.tourName || data.meta?.label || data.meta?.excerpt) && (
+        <Card>
+          {data.tourName && <h2>{data.tourName}</h2>}
+          {data.meta?.label && <h3>{data.meta.label}</h3>}
+          {data.meta?.excerpt && <p className="description">{data.meta.excerpt}</p>}
+          {url && <p><strong>URL:</strong> <a href={url} target="_blank" rel="noopener noreferrer">{url}</a></p>}
+        </Card>
+      )}
 
-        <div className="meta-badges">
-          {logistics.duration && <span className="badge primary">{logistics.duration}</span>}
-          {logistics.pricePerPerson && <span className="badge price">{logistics.pricePerPerson}</span>}
-          {logistics.difficulty && <span className="badge">{logistics.difficulty}</span>}
-          {logistics.groupSize && <span className="badge">Group: {logistics.groupSize}</span>}
-        </div>
-
-        {data.description && <p className="description">{data.description}</p>}
-      </Card>
-
-      {/* Quick Info */}
-      {(logistics.meetingPoint || logistics.bestTimeToVisit || logistics.guideLanguages) && (
+      {/* Info Section (Duration, Age Range, Difficulty) */}
+      {(data.info?.duration || data.info?.ageRange || data.info?.difficulty) && (
         <Card title="Quick Info">
           <div className="info-grid">
-            {logistics.meetingPoint && (
+            {data.info?.duration && (
               <div className="info-item">
-                <strong>Meeting Point</strong>
-                <span>{logistics.meetingPoint}</span>
+                <strong>Duration</strong>
+                <span>{data.info.duration}</span>
               </div>
             )}
-            {logistics.groupSize && (
+            {data.info?.ageRange && (
               <div className="info-item">
-                <strong>Group Size</strong>
-                <span>{logistics.groupSize}</span>
+                <strong>Age Range</strong>
+                <span>{data.info.ageRange}</span>
               </div>
             )}
-            {logistics.bestTimeToVisit && (
+            {data.info?.difficulty && (
               <div className="info-item">
-                <strong>Best Time</strong>
-                <span>{logistics.bestTimeToVisit}</span>
-              </div>
-            )}
-            {logistics.guideLanguages && (
-              <div className="info-item">
-                <strong>Guide Languages</strong>
-                <span>{logistics.guideLanguages}</span>
-              </div>
-            )}
-            {logistics.guideExperience && (
-              <div className="info-item">
-                <strong>Guide Experience</strong>
-                <span>{logistics.guideExperience}</span>
-              </div>
-            )}
-            {logistics.guideCertification && (
-              <div className="info-item">
-                <strong>Guide Certification</strong>
-                <span>{logistics.guideCertification}</span>
+                <strong>Difficulty</strong>
+                <span>{data.info.difficulty}</span>
               </div>
             )}
           </div>
         </Card>
       )}
 
-      {/* Highlights */}
-      {data.highlights?.length > 0 && (
-        <Card title="Highlights">
-          <ul className="highlight-list">
-            {data.highlights.map((h, i) => <li key={i}>{h}</li>)}
-          </ul>
+      {/* Custom Info */}
+      {data.customInfo?.length > 0 && (
+        <Card title="Additional Info">
+          <div className="info-grid">
+            {data.customInfo.map((item, i) => (
+              <div className="info-item" key={i}>
+                <strong>{item.label}</strong>
+                <span>{item.value}</span>
+              </div>
+            ))}
+          </div>
         </Card>
       )}
 
-      {/* Destinations */}
+       {/* Destinations */}
       {data.destinations?.length > 0 && (
         <Card title="Destinations">
-          {data.destinations.map((d, i) => <span className="badge" key={i}>{d}</span>)}
+          {data.destinations.map((d, i) => (
+            <span className="badge" key={i}>{d}</span>
+          ))}
         </Card>
       )}
 
       {/* Activities */}
       {data.activities?.length > 0 && (
         <Card title="Activities">
-          {data.activities.map((a, i) => <span className="badge" key={i}>{a}</span>)}
+          {data.activities.map((a, i) => (
+            <span className="badge" key={i}>{a}</span>
+          ))}
+        </Card>
+      )}
+
+      {/* Overview */}
+      {data.overview && (
+        <Card title="Overview">
+          <div dangerouslySetInnerHTML={{ __html: data.overview }} />
         </Card>
       )}
 
@@ -108,60 +121,66 @@ const Content = ({ data }) => {
       )}
 
       {/* Itinerary */}
-      {data.itineraries?.length > 0 && (
-        <Card title="Itinerary">
-          {data.itineraries.map((day, i) => (
+      {data.itineraries?.items?.length > 0 && (
+        <Card title={data.itineraries.title || "Itinerary"}>
+          {data.itineraries.items.map((day, i) => (
             <div className="itinerary-day" key={i}>
               <strong>{day.day}: {day.title}</strong>
-              <p>{day.description}</p>
-              {(day.accommodation || day.meals) && (
-                <small>
-                  {day.accommodation && <span>{day.accommodation}</span>}
-                  {day.accommodation && day.meals && ' • '}
-                  {day.meals && <span>{day.meals}</span>}
-                </small>
-              )}
+              <div dangerouslySetInnerHTML={{ __html: day.description }} />
+              {day.meals && <small>Meals: {day.meals}</small>}
             </div>
           ))}
         </Card>
       )}
 
       {/* Inclusions */}
-      {data.inclusions?.length > 0 && (
-        <Card title="Inclusions">
+      {data.inclusions?.items?.length > 0 && (
+        <Card title={data.inclusions.title || "Inclusions"}>
           <ul className="inclusion-list">
-            {data.inclusions.map((item, i) => <li key={i}>{item}</li>)}
+            {data.inclusions.items.map((item, i) => (
+              <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
+            ))}
           </ul>
         </Card>
       )}
 
       {/* Exclusions */}
-      {data.exclusions?.length > 0 && (
-        <Card title="Exclusions">
+      {data.exclusions?.items?.length > 0 && (
+        <Card title={data.exclusions.title || "Exclusions"}>
           <ul className="exclusion-list">
-            {data.exclusions.map((item, i) => <li key={i}>{item}</li>)}
+            {data.exclusions.items.map((item, i) => (
+              <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
+            ))}
           </ul>
         </Card>
       )}
 
-      {/* Cancellation Policy */}
-      {logistics.cancellationPolicy && (
-        <Card title="Cancellation Policy">
-          <p>{logistics.cancellationPolicy}</p>
+      {/* Other (miscellaneous sections with HTML) */}
+      {data.other && (
+        <Card title="Other Information">
+          <div dangerouslySetInnerHTML={{ __html: data.other }} />
         </Card>
       )}
 
       {/* FAQs */}
-      {data.faqs?.length > 0 && (
-        <Card title="FAQs">
-          {data.faqs.map((f, i) => (
+      {data.faqs?.items?.length > 0 && (
+        <Card title={`${data.faqs.title || "FAQs"} (${data.faqs.items.length})`}>
+          {data.faqs.items.map((f, i) => (
             <div className="faq" key={i}>
               <strong>{f.question}</strong>
-              <span>{f.answer}</span>
+              <div dangerouslySetInnerHTML={{ __html: f.answer }} />
             </div>
           ))}
         </Card>
       )}
+
+      {/* Render unknown/other fields dynamically */}
+      {Object.keys(data).map((key) => {
+        if (!renderedFields.has(key)) {
+          return <DetailCard key={key} title={key} content={data[key]} />;
+        }
+        return null;
+      })}
     </>
   );
 };

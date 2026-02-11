@@ -11,7 +11,7 @@ export default defineConfig({
     },
     proxy: {
       '/api': {
-        target: 'http://192.168.10.154:3010',
+        target: 'http://192.168.10.43:3020',
         changeOrigin: true
       }
     }
